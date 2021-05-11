@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function CreateRoom() {
+export default function CreateRoomPage() {
     return (
         <div>
-            CreateRoom
+            CreateRoomPage
         </div>
     )
 }

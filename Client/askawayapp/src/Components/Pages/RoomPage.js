@@ -1,9 +1,12 @@
 import React from 'react'
 
-export default function RoomPage() {
+export default function RoomPage(props) {
+
+    let {id} = props.match.params;
+
     return (
         <div>
-            RoomPage
+            RoomPage {id}
         </div>
     )
 }
