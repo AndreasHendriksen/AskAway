@@ -21,20 +21,10 @@ function App() {
                 <Route exact path="/" component={MainHeader} />
                 <Route path="/room/*" component={RoomHeader} />
             </Switch>
-            <main style={{ minHeight: window.innerHeight, backgroundColor: "#f4f4f4", paddingTop:58 }}>
+            <main style={{ minHeight: window.innerHeight, backgroundColor: "#f4f4f4", paddingTop: 58, paddingBottom: 200 }}>
                 <Switch>
-                    <Route
-                        exact
-                        path="/"
-                        render={() => (
-                            <>
-                                <HomePage />
-                            </>
-                        )}
-                    />
+                    <Route exact path="/" component={HomePage} />
                     <Route path="/room/:id" component={RoomPage} />
-                    <Route path="/" component={HomePage} />
-                    <Route path="/" component={HomePage} />
                 </Switch>
             </main>
             <Switch>
