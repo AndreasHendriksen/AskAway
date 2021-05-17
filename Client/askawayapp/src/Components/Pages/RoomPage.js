@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 //  Components
 import QuestionBox from "../QuestionBox";
 import InputBox from "../InputBox";
-import OptionsModal from "../OptionsModal";
+
 
 export default function RoomPage(props) {
     let { id } = props.match.params;
@@ -84,7 +84,7 @@ export default function RoomPage(props) {
         },
     ]);
 
-    //Split questions by whether or not they have been answered and reassemble
+    //Sort questions by whether or not they have been answered
     console.log(questions.sort((a, b) => a.answered - b.answered));
 
     return (
@@ -94,7 +94,7 @@ export default function RoomPage(props) {
                 <QuestionBox index={index} item={item} />
             ))}
             <InputBox />
-            <OptionsModal />
+            
         </>
     );
 }

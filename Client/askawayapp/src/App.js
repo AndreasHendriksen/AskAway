@@ -2,6 +2,9 @@ import "./App.css";
 import { Route, Switch } from "react-router-dom";
 
 //  Components
+import OptionsModal from "./Components/OptionsModal";
+import { RoomCodeInputModal, RoomOptaions, RoomOptionsModal } from "./Components/RoomCodeModals";
+
 //Layout
 import MainHeader from "./Components/Layout/MainHeader";
 import MainFooter from "./Components/Layout/MainFooter";
@@ -11,7 +14,6 @@ import RoomFooter from "./Components/Layout/RoomFooter";
 //Pages
 import HomePage from "./Components/Pages/HomePage";
 import RoomPage from "./Components/Pages/RoomPage";
-import EnterPinPage from "./Components/Pages/EnterPinPage";
 import CreateRoomPage from "./Components/Pages/CreateRoomPage";
 
 function App() {
@@ -31,6 +33,11 @@ function App() {
                 <Route exact path="/" component={MainFooter} />
                 <Route path="/room/*" component={RoomFooter} />
             </Switch>
+
+            {/* Modals */}
+            <OptionsModal />
+            <RoomCodeInputModal />
+            <RoomOptionsModal />
         </div>
     );
 }

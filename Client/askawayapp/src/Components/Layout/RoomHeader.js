@@ -9,7 +9,7 @@ export default function RoomHeader() {
             <h1 className="text-center mt-1" style={{ fontSize: 30 }}>
                 Room Title
             </h1>
-            <p type="" class="" data-toggle="modal" data-target="#staticBackdrop">
+            <p class="" data-bs-toggle="modal" data-bs-target="#roomSettingsModal">
                 <BsThreeDotsVertical style={{ fontSize: 30, position: "absolute", top: "50%", right: 18, transform: "translate(10px, -50%)" }} />
             </p>
         </header>
