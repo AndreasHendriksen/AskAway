@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router-dom";
 
 //  Components
 import OptionsModal from "./Components/OptionsModal";
-import { RoomCodeInputModal, RoomOptaions, RoomOptionsModal } from "./Components/RoomCodeModals";
+import RoomCodeModals from "./Components/RoomCodeModals";
 
 //Layout
 import MainHeader from "./Components/Layout/MainHeader";
@@ -36,8 +36,7 @@ function App() {
 
             {/* Modals */}
             <OptionsModal />
-            <RoomCodeInputModal />
-            <RoomOptionsModal />
+            <RoomCodeModals />
         </div>
     );
 }

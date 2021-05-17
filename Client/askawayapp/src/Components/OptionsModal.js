@@ -1,7 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 export default function OptionsModal() {
+
+    const history = useHistory();
+
     return (
         <section className="modal fade" id="roomSettingsModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="roomSettingsModalLabel" aria-hidden="true">
             <div className="modal-dialog">
@@ -29,7 +32,7 @@ export default function OptionsModal() {
                         </div>
                     </div>
                     <div className="modal-footer text-left">
-                        <button type="button" className="btn btn-danger me-auto" data-dismiss="modal">
+                        <button type="button" className="btn btn-danger me-auto" data-bs-dismiss="modal" onClick={() => history.push("/")}>
                             Exit Room
                         </button>
 
