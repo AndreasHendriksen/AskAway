@@ -6,7 +6,7 @@ import { BsThreeDotsVertical } from "react-icons/bs";
 export default function RoomHeader() {
     return (
         <header id="header" className="bg-white p-1" style={{ height: 58, position: "fixed", top: 0, left: 0, right: 0, boxShadow: "0px 0px 15px 2px rgba(0,0,0,0.1)", zIndex: 100 }}>
-            <h1 className="text-center mt-1" style={{ fontSize: 30 }}>
+            <h1 className="text-center mt-1" style={{ fontSize: 30, color:"#555" }}>
                 h120lang Medie
             </h1>
             <p data-bs-toggle="modal" data-bs-target="#roomSettingsModal">

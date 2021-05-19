@@ -53,8 +53,8 @@ export default function RoomCodeInputModal() {
                                     <input type="text" className="form-control" placeholder="Nicknames disabled" disabled />
                                 </div>
                                 <div className="col-6">
-                                    <button className="btn btn-secondary w-100" data-bs-dismiss="modal">
-                                        Cancel
+                                    <button className="btn btn-secondary w-100" data-bs-toggle="modal" data-bs-target="#roomCodeInputModal" data-bs-dismiss="modal">
+                                        Back
                                     </button>
                                 </div>
                                 <div className="col-6">

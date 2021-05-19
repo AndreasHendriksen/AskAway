@@ -13,9 +13,13 @@ export default function MainFooter() {
             <AiFillHome style={{ fontSize: 35, position: "absolute", top: "50%", left: (window.innerWidth - 55) / 4, transform: "translate(-50%, -50%)" }} />
 
             <div className="bg-white" style={{ width: 55, height: 55, position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -85%)", borderRadius: 8 }} />
+            <Link to="#" style={{color:"#212529"}} >
             <FiPlusSquare style={{ fontSize: 55, position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -85%)" }} data-bs-toggle="modal" data-bs-target="#roomCodeInputModal" />
+            </Link>
 
-            <HiLockOpen style={{ fontSize: 35, position: "absolute", top: "50%", right: (window.innerWidth - 55) / 4, transform: "translate(50%, -50%)" }} />
+            <Link to="/createRoom" style={{color:"#212529"}} >
+                <HiLockOpen style={{ fontSize: 35, position: "absolute", top: "50%", right: (window.innerWidth - 55) / 4, transform: "translate(50%, -50%)" }} />
+            </Link>
         </footer>
     );
 }
